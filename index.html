@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="assets/img/favicon (2).ico">
+<title>Projects | LangLang</title>
+<style>
+  .button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.7s;
+}
+body {
+  background-color:#fefefe
+}
+  
+.button:hover {
+  background-color: #0080ff; /* Blue */
+  color: white;
+}
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #0080ff;
+  display: block;
+  transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0080ff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h1 style="color:white;">&nbsp;&nbsp;LangLang</h1>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="blog">Blog</a>
+  <a href="dtml">DTML</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+<script>
+  /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+<h1>LangLang - Projects</h1>
+<div style="padding-left:17px">
+  <h2>Scripts</h2>
+  <h3>Taléran</h3>
+  <img src="/assets/img/Screenshot 2019-12-05 at 12.59.01 PM.png" alt="bit.ly/taleran">
+</div>
+<div>
+  <h2>Sounds</h2>
+  <button class="button" onclick="window.location.href = 'https://harry-potter-sounds.ambient-mixer.com/ravenclaw-common-room-no--222';" >Ravenclaw Common Room</button>
+  <button class="button" onclick="window.location.href = 'https://forest.ambient-mixer.com/misty-enchanted-forest-night';" >Enchanted Forest</button>
+  <button class="button" onclick="window.location.href = 'https://desert.ambient-mixer.com/high-dessert-at-night';" >High Desert at Night</button>
+</div>
+<div>
+  <h2>Magic Cards</h2>
+  <button class="button" onclick="window.location.href = 'https://mtgcardsmith.com/user/KazBodnar/cards
+';" >My Cards</button>
+  <button class="button" onclick="window.location.href = 'https://mtgcardsmith.com/view/zakroth-ally-of-dragons?list=user';" >Zakroth, Ally of Dragons</button>
+</div>
+<div>
+  <h2>Maps</h2>
+  <h3>Nørdalfas</h3>
+  <img src="/assets/img/Screen Shot 2019-12-04 at 12.10.05 PM.png" alt="Map of Nørdalfas">
+  <h3>Voshanu</h3>
+  <img src="/assets/img/Screen Shot 2019-12-04 at 12.10.51 PM.png" alt="Map of Voshanu">
+  <h3>Yorkton-on-Mill</h3>
+  <img src="/assets/img/Screen Shot 2019-12-04 at 12.10.29 PM.png" alt="Map of Yorkton-on-Mill">
+  <h3>Erenath</h3>
+  <img src="/assets/img/Screen Shot 2019-12-04 at 12.09.12 PM.png" alt="Map of Erenath">
+  <h3>York Fictional Subway Map</h3>
+  <img src="/assets/img/YorkSubwayMap.png" alt="bit.ly/yorksubwaymap">
+</div>
+<footer>
+  <div class="container-fluid padding">
+      <div class="row text-center">
+          <div class="col-12">
+            
+              <h5>&copy; Sam Langer 2019</h5>
+              <h6 style="text-align:center"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</h6>          </div>
+      </div>
+  </div>
+</footer>
+</html>
